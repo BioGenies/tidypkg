@@ -6,6 +6,11 @@
 \usage{
 check_params(fun_name, parameters)
 }
+\arguments{
+\item{fun_name}{\code{character} string; the name of the function.}
+
+\item{parameters}{\code{character} vector; acceptable parameter names.}
+}
 \description{
 This functions checks if the parameters of a given function
 belong to the pre-defined parameter list.
@@ -14,5 +19,5 @@ belong to the pre-defined parameter list.
 f1 <- function(x = 1)
   x
 
-check_args("f1", "x")
+check_params("f1", "x")
 }
